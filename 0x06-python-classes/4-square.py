@@ -6,11 +6,12 @@ class Square:
     """square class with no attributes"""
     def __init__(self, size=0):
         """Instantiation with size"""
-        self.__size = size
+        self.size = size
 
     @property
     def size(self):
         return self.__size
+
     @size.setter
     def size(self, value):
         if type(value) is not int:
