@@ -56,7 +56,7 @@ class Square:
                     for l in range(self.__size):
                         printstr += "#"
                     printstr += "\n"
-                return strin[:-1]
+                return printstr[:-1]
 
     def area(self):
         return self.__size * self.__size
