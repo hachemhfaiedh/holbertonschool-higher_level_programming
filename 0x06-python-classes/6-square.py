@@ -27,6 +27,7 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """set position"""
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif type(value[0]) is not int:
@@ -42,11 +43,9 @@ class Square:
         self.__position = value
 
     def area(self):
-        """square area"""
         return self.__size * self.__size
 
     def my_print(self):
-        """print square"""
         if self.__size == 0:
             print()
         for f in range(self.__position[1]):
