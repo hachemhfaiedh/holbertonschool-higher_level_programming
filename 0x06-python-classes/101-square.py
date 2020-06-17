@@ -43,20 +43,20 @@ class Square:
         else:
             self.__position = value
 
-        def __str__(self):
-            printstr = ""
-            if self.__size == 0:
+    def __str__(self):
+        printstr = ""
+        if self.__size == 0:
+            printstr += "\n"
+        else:
+            for i in range(self.__position[1]):
                 printstr += "\n"
-            else:
-                for i in range(self.__position[1]):
-                    printstr += "\n"
-                for j in range(self.__size):
-                    for k in range(self.__position[0]):
-                        printstr += " "
-                    for l in range(self.__size):
-                        printstr += "#"
-                    printstr += "\n"
-                return printstr[:-1]
+            for j in range(self.__size):
+                for k in range(self.__position[0]):
+                    printstr += " "
+                for l in range(self.__size):
+                    printstr += "#"
+                printstr += "\n"
+        return printstr[:-1]
 
     def area(self):
         return self.__size * self.__size
