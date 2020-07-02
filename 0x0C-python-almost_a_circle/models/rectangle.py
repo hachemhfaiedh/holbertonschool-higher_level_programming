@@ -107,7 +107,7 @@ class Rectangle(Base):
                 .format(type(self).__name__, self.id, self.x, self.y,
                         self.width, self.height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ update """
 
         for i, j in enumerate(args):
@@ -121,3 +121,15 @@ class Rectangle(Base):
                 self.x = j
             if i == 4:
                 self.y = j
+
+        for dk, kv in kwargs.items():
+            if dk == "id":
+                self.id = kv
+            if dk == "width":
+                self.width = kv
+            if dk == "height":
+                self.height = kv
+            if dk == "x":
+                self.x = kv
+            if dk == "y":
+                self.y = kv
