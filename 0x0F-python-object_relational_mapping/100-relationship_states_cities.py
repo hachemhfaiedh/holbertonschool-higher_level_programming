@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""script that lists all State objects from the database hbtn_0e_6_usa"""
+"""script that creates the State “California” with the City “San Francisco”
+from the database hbtn_0e_100_usa
+"""
 from sys import argv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
