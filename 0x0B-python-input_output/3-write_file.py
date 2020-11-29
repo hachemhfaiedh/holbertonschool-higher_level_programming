@@ -5,6 +5,6 @@
 def write_file(filename="", text=""):
     """write a text file"""
 
-    text_file = open(filename, "w")
-    n = text_file.write(text)
+    with open(filename, "w") as f:
+        n = f.write(text)
     return n
