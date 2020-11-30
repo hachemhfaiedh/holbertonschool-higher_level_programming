@@ -4,8 +4,6 @@
 
 class Student:
     """class def"""
-
-
     def __init__(self, first_name, last_name, age):
         """instatiation"""
         self.first_name = first_name
